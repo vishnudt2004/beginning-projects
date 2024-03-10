@@ -1,0 +1,21 @@
+-----Project GASCKPM-----
+
+Project 1.0 - GASCKPM
+
+* Single Page - Homepage Design + Go to Top Button.
+
+-------------------
+Project 1.1 - GASCKPM
+
+* All Other Pages Linked - Unorganized Files & Directories.
+
+-------------------
+Project 1.2 - GASCKPM
+
+* All Other Pages Linked - Files & Folders Are Organized
+* Activity Page is Replaced by New One.
+
+-------------------
+Project 1.3 - GASCKPM
+
+* Homepage Paragraphs are Justified.

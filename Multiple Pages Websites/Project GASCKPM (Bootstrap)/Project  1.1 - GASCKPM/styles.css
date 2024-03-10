@@ -1,0 +1,254 @@
+::-webkit-scrollbar{
+    width: 10px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    border: 2px solid white;
+    background-color: #0dcaf0;
+}
+
+body{
+    overflow-x: hidden;
+    user-select: none;
+}
+
+.nav-link{
+    position: relative;
+}
+
+.nav-link::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: white;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: .5s;
+}
+
+nav ul{
+    height: 64px;
+}
+
+nav ul li #nav-logo{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    transition: .5s;
+}
+
+nav ul li #nav-logo:hover{
+    scale: 90%;
+    /* transform: translate(13%, 13%); */
+}
+
+.nav-item:last-child .nav-link::after{
+    background-color: #0dcaf0;
+}
+
+.nav-link:hover::after{
+    width: 60%;
+}
+
+.nav-link:hover{
+    background-color: #0dcaf0;
+}
+
+#Login::before{
+    content: "Only For Authorized Users";
+    font-size: 0.8rem;
+    width: 200px;
+    position: absolute;
+    top: 110%;
+    right: 0;
+    left: 0;
+    transform: translateX(-30%);
+    background-color:#0dcaf0;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    pointer-events: none;
+    transition: .5s;
+}
+
+#Login:hover::before{
+    opacity: 1;
+}
+
+#carousel{
+    text-align: center;
+    width: 98.7vw;
+}
+
+.carousel-inner{
+    display: flex;
+    height: 80vh;
+    align-items: center;
+}
+
+.carousel.rounded-3{
+    overflow: hidden;
+}
+
+.carousel-item img{
+    width: 100%;
+}
+
+#content{
+    display: flex;
+    justify-content:center;
+}
+
+#content-1{
+    width: 90%;
+}
+
+.Card-row1{
+    height: 65vh;
+    display: flex;
+    align-items: center;
+}
+
+.Card-row1 .card{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #0dcaf0;
+}
+
+.Card-row1 .card img{
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+#footer{
+    height: 50vh;
+}
+
+.scrollTop{
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgba(104, 104, 104, 0.534);
+    backdrop-filter: blur(20px);
+    bottom: 50px;
+    right: 50px;
+    z-index: 10;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.scrollTop i{
+    color: white;
+}
+
+#footer{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer a{
+    text-decoration: none;
+}
+
+#footer a:hover{
+    color: red;
+}
+
+#footer iframe{
+    height: 270px;
+}
+
+#others .rowA a{
+    color: unset;
+    text-decoration: none;
+}
+
+#others .rowA a:hover{
+    color: unset;
+}
+
+#others{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#others .others{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:2px solid #0dcaf0;
+}
+
+#others .others p{
+    position: absolute;
+    bottom: -10px;
+    background-color: #0dcaf0;
+    width: 200px;
+    font-size: 1.4rem;
+    padding: 6px 0;
+    transition: .5s;
+}
+
+#others .colA{
+    transition: .5s;
+}
+
+#others .colA .others i{
+    transition: .5s;
+}
+
+#others .colA:hover{
+    transform: scale(90%);
+}
+
+#others .colA:hover .others p{
+    bottom: -20%;
+    color: white;
+}
+
+#others .colA:hover .others i{
+    color: #0dcaf0;
+}
+
+.rowA{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#others .colA:last-child .others p::before{
+    content: "National Institutional Ranking Framework";
+    position: absolute;
+    top: 110%;
+    left: -45%;
+    width: 400px;
+    opacity: 0;
+    pointer-events: none;
+    background-color: #0dcaf0;
+    transition: .5s;
+    padding: 10px;
+}
+
+#others .colA:hover:last-child .others p::before{
+    opacity: 1;
+    color: white;
+}
