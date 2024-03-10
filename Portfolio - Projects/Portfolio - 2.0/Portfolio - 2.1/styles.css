@@ -1,0 +1,595 @@
+*{scroll-behavior: smooth;}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: whitesmoke;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(120deg,slateblue,violet);
+    border-radius: 30px;
+    border: 3px solid whitesmoke;
+    
+}
+
+body{
+    margin: 0;padding:0;
+    background:linear-gradient(130deg,violet,slateblue);
+    background-attachment: fixed;
+    background-size: contain;
+    color: white;
+    font-family: sans-serif;
+    box-sizing:border-box;
+}
+
+#page-1{
+    height: 100vh;
+}
+
+#container-nav{
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0,0,0,0.255);
+    width: 97%;
+    height: 50px;
+    border-radius: 0 0 5px 5px;
+    justify-content: right;
+}
+
+nav ul{
+    background-color: rgba(0,0,0,0.255);
+    border-radius: 5px;
+    line-height: 2.5;
+    height: 35px;
+    margin-right: 10px;
+}
+
+nav ul li{
+    font-weight:bold;
+    cursor: pointer;
+    display: inline;
+    list-style-type: none;
+    padding: 5px 20px;
+    margin: 20px;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+nav ul li:hover{
+    background-color: rgb(255, 255, 255);
+    color:black;
+}
+
+#Logo{
+    cursor: pointer;
+    font-size: 2rem;
+    letter-spacing: 4px;
+    position: absolute;
+    left: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: .5s;
+}
+
+#Logo:hover{
+    background: rgba(0, 0, 0, 0.255);
+    padding: 0 20px;
+    transition: .5s;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: unset;
+}
+
+nav ul li:last-child ul{
+    display: none;
+    /* display: block; */
+    align-items: center;
+    flex-direction: column;
+    width: 70px;
+    height: 120px;
+    position: absolute;
+    right: 10px;
+    margin-top:-6px;
+    padding-left:6px;
+    padding-right: 20px;
+    border-radius: 0;
+}
+
+nav ul li:last-child ul li{
+    margin: 0;
+    padding: 5px 20px;
+}
+
+nav ul li:last-child:hover ul{
+    display: block;
+    color: white;
+}
+
+
+
+.container-triangle{
+    width: 100px;
+    height: 100px;
+    /* background-color: white; */
+    border-radius: 50%;
+    position: relative;
+    top: 270px;
+    left: 270px;
+    animation: rot 130s ease-out infinite alternate;
+}
+
+.triangle{
+    height: 0;
+    position: absolute;
+    bottom: -110px;
+    right: -110px;
+    rotate: -30deg;
+    width: 0px;
+    border: 250px solid transparent;
+    border-bottom:400px rgba(0,0,0,0.255) solid;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+.triangle-nest{
+    height: 0;width: 0px;
+    position: absolute;
+    top: 98px;
+    right: -170px;
+    rotate: -122deg;
+    border: 230px solid transparent;
+    border-bottom:200px rgba(0, 0, 0, 0.637) solid;
+}
+
+.triangle-line{
+    border: 2px solid transparent;
+    border-bottom:220px rgba(0, 0, 0, 0.637) solid;
+    rotate: 7deg;
+    position: absolute;
+    bottom: -2px;
+    left: 12px;
+}
+
+.container-text{
+    position: absolute;
+    color: rgba(0, 0, 0, 0.637);
+    top: 50%;
+    right: 100px;
+    text-align: center;
+    transform: translateY(-50%);
+    cursor: default;
+    transition:.5s ;
+}
+
+.container-text:hover{
+    color: white;
+}
+
+.container-text h1{
+    font-size: 5rem;
+    margin-bottom: 0;
+}
+
+.container-text h2{
+    font-size: 2rem;
+}
+
+.container-text p{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.animation-circles{
+    z-index: -1;
+}
+
+.animation-circles div:first-child{
+    position: relative;
+    left: 100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.255);
+    animation: shk2 5s infinite alternate;
+}
+
+.animation-circles div:first-child::before{
+    position: absolute;
+    top: 300px;
+    left:490px;
+    content: "";
+    width:200px ;
+    height:200px ;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.255);
+}
+
+.animation-circles div:first-child::after{
+    position: absolute;
+    left: 1020px;
+    content: "";
+    width:150px ;
+    height:150px ;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.255);
+}
+
+.animation-circles div:last-child{
+    position: relative;
+    top: 200px;
+    left: 900px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.255);
+    animation: shk 3s infinite alternate;
+}
+
+.animation-circles div:last-child::before{
+    position:absolute;
+    bottom: 300px;
+    right: 350px;
+    content: "";
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.255);
+}
+
+.animation-circles div:last-child::after{
+    position:absolute;
+    top:100px;
+    right: 680px;
+    content: "";
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.255);
+}
+
+.container-arrow{
+    position: absolute;
+    border: 40px solid transparent;
+    border-bottom: 50px solid rgb(255, 255, 255);
+    bottom: 20px;
+    right: 360px;
+    rotate: 180deg;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.arrow{
+    border: 35px solid transparent;
+    border-bottom: 50px solid rgb(125, 112, 207);
+    position: absolute;
+    left: -35px;
+    bottom: -60px;
+    z-index: -1;
+}
+
+.arrow-nest{
+    position: absolute;
+    border: 15px solid transparent;
+    border-bottom: 20px solid rgb(255, 255, 255);
+    left: -15px;
+    bottom: -30px;
+    transition: 0.3s;
+}
+
+.container-arrow:hover,.container-arrow:hover .arrow-nest{
+    border-bottom-color:rgb(0, 0, 0);
+}
+
+@keyframes shk{
+    to{
+        transform:translateY(-60%) translateX(10%) ;
+    }
+}
+
+@keyframes shk2{
+    to{
+        transform:translateX(30%) translateY(20%);
+    }
+}
+
+@keyframes rot{
+    to{
+        rotate: 1.5turn;
+    }
+}
+
+/*page2*/
+#page-2{
+    height:100vh ;
+    position: relative;
+}
+
+.container-triangle-2{
+    position: relative;
+    left: 960px;
+    top: -450px;
+    animation: none;
+}
+
+.triangle{
+    border-top: 0px;
+}
+
+.triangle-nest-2{
+    position: absolute;
+    left: -200px;
+    top: -140px;
+    border: 200px solid transparent;
+    border-bottom:310px rgba(0,0,0,0.255) solid;
+}
+
+#page-2 img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    top: 155px;
+    right: 265px;
+    filter: saturate(100%);
+    transition: .5s;
+}
+
+#page-2 img:hover{
+    filter: saturate(150%);
+    scale: 2;
+}
+
+.container-text-2{
+    height: 80vh;
+    text-align: center;
+    line-height: 2;
+    letter-spacing: 2px;
+    padding-top:150px;
+    margin-left: 100px;
+    width: 500px;
+    background-color: rgba(0,0,0,0.255);
+    transition:.5s ;
+}
+
+.container-text-2:hover{
+    background-color: white;
+    color: black;
+}
+
+.animation-circles-2{
+    position: relative;
+    bottom:700px;
+}
+
+/*page-3 */
+#page-3{
+    height: 100vh;
+    position: relative;
+}
+
+.container-arrow-3{
+    right: 47%;
+}
+
+.container-cards{
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container-cards div{
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+    margin: 0  30px ;
+    padding: 60px 10px ;
+    background-color: rgba(0, 0, 0, 0.255);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.container-cards div:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+
+.container-cards div h1{
+    font-size: 3rem;
+}
+
+.container-cards div h3{
+    letter-spacing: 4px;
+}
+
+.container-cards div p{
+    letter-spacing: 2px;
+    line-height: 2;
+    background-color: rgba(0,0,0,0.255);
+    height: 55%;
+}
+
+.animation-circles-3{
+    position: relative;
+    bottom:550px;
+}
+
+.container-cards{
+    text-transform: capitalize;
+}
+
+#page-4{
+    height: 90vh;
+}
+
+.container-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-form{
+    background-color: rgba(0, 0, 0, 0.637);
+    border-radius:5px;
+    padding: 20px;
+    transition: .5s;
+}
+
+.container-form:hover{
+    background-color: whitesmoke;
+    
+}
+
+legend{
+    font-size: 20px ;
+    color: white ;   
+    padding: 10px;
+    position: relative;
+    cursor: default;
+}
+
+.container-form:hover legend{
+    color: slateblue;
+}
+
+form{
+    padding: 50px;
+}
+
+input{
+    background-color: transparent;
+    padding-top: 50px;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+.container-form:hover input{
+    border-bottom-color: slateblue;
+}
+
+input:focus{
+    outline: none;
+    transition: .5s;
+}
+
+input:focus::placeholder{
+    transform: translateY(-25px);
+    transition: .5s;
+}
+
+fieldset{
+    border: 2px white solid ;
+    border-radius: 5px;
+}
+
+.container-form:hover fieldset{
+    border-color: slateblue;
+}
+
+input[type="submit"]{
+    color: white;
+    font-size: 1.2rem;
+    margin: 50px 50px 0 50px;
+    border-radius: 20px;
+    padding: 5px 20px;
+    border:2px white solid;
+    cursor: pointer;
+}
+
+.container-form:hover input[type="submit"]{
+    color: slateblue;
+    border-color: slateblue;
+}
+
+.container-form input[type="submit"]:hover{
+    color: white;
+    background-color: slateblue;
+    box-shadow:0 0 10px 1px rgba(0, 0, 0, 0.637);
+}
+
+input:first-child{
+    padding-top:25px ;
+}
+
+.socialmedia-icons{
+    display: flex;
+    justify-content:center;
+    margin-top:50px;
+}
+
+.socialmedia-icons h1{
+    text-align: center;
+    padding: 5px 15px;
+    cursor: pointer;
+    width: 70px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.637);
+    border-radius: 5px;
+    margin: 0 10px;
+    overflow: hidden;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: .5s;
+}
+
+.socialmedia-icons h1 img{
+    width: 40px;
+    transition: .5s;
+}
+
+.socialmedia-icons h1:hover{
+    font-size: 1rem;
+    background-color: whitesmoke;
+    color:slateblue;
+}
+
+.socialmedia-icons h1:hover img{
+    width: 23px;
+    filter: invert();
+}
+
+.socialmedia-icons h1:nth-child(1):hover::after{
+    content:"E-Mail";   
+}
+
+.socialmedia-icons h1:nth-child(2):hover::after{
+    content: "Twitter";
+}
+
+.socialmedia-icons h1:nth-child(3):hover::after{
+    content: "Instagram";
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-footer{
+    height: 50px;
+    width:97%;
+    background-color: rgba(0, 0, 0, 0.377);
+    border-top-right-radius:5px;
+    border-top-left-radius:5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    background-color: rgba(0, 0, 0, 0.637);
+    display: inline;
+    padding: 10px 25px;
+    border-radius: 5px;
+}

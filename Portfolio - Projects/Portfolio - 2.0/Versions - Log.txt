@@ -1,0 +1,29 @@
+-----Project Portfolio-----
+
+Project 2.0 - Portfolio
+
+* Portfolio Page - Grey Background Color.
+
+-----------------------
+Project 2.1 - Portfolio
+
+* Linear-Gradient Background Color
+* More Option Navigation Menu Nesting Options
+* Custom Scrollbar
+* Profile Image Hover Effect is Changed.
+
+-----------------------
+Project 2.2 - Portfolio
+
+* More Hover Effects For Navbar & Unnecessary Objects.
+
+-----------------------
+Project 2.3 - Portfolio
+
+* Dark Mode / Light Mode Toggle Button is Newly Added in Navigation Menu
+* Dark Mode / Light Mode is Implemented.
+
+-----------------------
+Project 2.4 - Portfolio
+
+* Profile Image is Changed to Glitch Effect Edited Image.

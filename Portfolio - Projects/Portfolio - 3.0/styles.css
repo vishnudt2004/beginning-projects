@@ -1,0 +1,212 @@
+::-webkit-scrollbar{
+    width: 10px;
+    height: 12px;
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: springgreen ;
+    border: 3px solid black;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing:border-box;
+    background: conic-gradient(rgb(0,255,157),black) -180px;
+    /* background: linear-gradient(120deg,rgb(2,103,243),rgb(252,71,250)); */
+    background-size:140% 110vh;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+}
+
+#page1{
+    height:100vh;
+    width: 100vw;
+}
+
+nav ul{
+    font-size: 1.1rem;
+    font-weight: bold;
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+
+nav ul li{
+    display: inline;margin:20px 25px;
+}
+
+nav ul li#logo{
+    position: absolute;
+    left: 20px;
+    align-items:flex-start;
+    margin-top: 10px;
+}
+
+nav ul li img{
+    width: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    /* box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.295); */
+    transition: .2s;
+}
+
+nav ul li img:hover{
+    /* border: white 2px solid; */
+    box-shadow: 0 0 0 5px white;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 0 12px;
+    padding-bottom: 2px;
+}
+
+nav ul li:hover a{
+    background-color: black;
+    color: rgb(0, 255, 157);
+    transition: .4s;
+    border-radius: 30px;
+}
+
+.text{
+    color: white;
+    position: absolute;
+    bottom: 40px;
+    left: 90px;
+    letter-spacing: 5px;
+}
+
+.text h1{
+    font-size: 3rem;
+    display: inline;
+    color: transparent;
+    margin: 0;
+    -webkit-text-stroke: 1px whitesmoke;
+    cursor: default;
+}
+
+.text h1:hover{
+    color: whitesmoke;
+    transition: .3s;
+    -webkit-text-stroke:0;
+}
+
+.text h2{
+    color: rgba(255, 255, 255, 0.452);
+    /* color: rgba(0, 0, 0, 0.452); */
+    font-size:10rem ;
+    display: inline;
+    cursor: default;
+    transition: .3s;
+    /* -webkit-text-stroke: 2px rgb(255, 255, 255); */
+    
+}
+
+.text h2:hover{
+    -webkit-text-stroke: 1px rgb(255, 254, 254);
+    color: transparent;
+}
+
+.text p{
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.459);
+    cursor: pointer;
+    /* border: 1px rgba(255, 255, 255, 0.452) solid; */
+    padding: 7px 30px;
+    border-radius: 5px;
+    /* top:50%; */
+    /* transform: translateY(-50%); */
+}
+
+p span{
+    font-size: 2rem;
+}
+
+#des-rou{
+    border-radius: 5px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.459);
+    width: 100%;
+    transition: .4s;
+}
+
+#des-rou:hover{
+    background-color:rgba(255, 255, 255, 0.295);
+}
+
+#page2{
+    height:110vh;
+    width: 100vw;
+    color: white;
+    background:linear-gradient(125deg,black,rgb(0, 255, 157));
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-2{
+    height: 110vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+#page2 img{
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 22px rgba(49, 49, 49, 0.459);
+    border: 12px rgba(0, 0, 0, 0.459) solid;
+    transition: .4s;
+    z-index: 2;
+}
+
+#page2 img:hover{
+    box-shadow:  0 0 0 44px rgba(255, 255, 255, 0.459);
+    border:12px rgba(255, 255, 255, 0.753) solid;
+    transition: .4s;
+}
+
+#page2 .text-2{
+    width: 500px;height: 500px;
+    padding: 20px;
+    line-height: 3;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: sans-serif;
+    color:whitesmoke;
+    background-color: rgba(0, 0, 0, 0.459);
+    border-radius: 50%;
+    transition: .4s;
+    z-index: 2;
+    opacity: 0;
+    /* animation: textEffect 2s linear infinite forwards; */
+}
+
+@keyframes textEffect{
+    from{
+        margin-right:50px ;
+    }
+    to{
+        margin-right:0;
+        opacity: 100%;
+    }
+}
+
+#page2 .text-2:hover{
+    box-shadow: 0 0 0 12px rgba(255, 255, 255, 0.795);
+    background-color: rgba(245, 245, 245, 0.623);
+    color: black;
+    font-weight: bold;
+}
+
+
+/* .bar2{
+       
+} */
