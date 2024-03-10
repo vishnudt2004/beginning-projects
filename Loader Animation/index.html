@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+    <div id="view" style="width: 100vw;height: 110vh;border-radius: 0;align-items: center;justify-content: center;display:none;position:fixed;z-index:100;"></div><span onclick="closeUp();">✖</span><span id="fullScreenSpan" onclick="fullScreenUp();">▢</span>
+
+    <div id="loader1" onclick="viewUp(this.id, this.innerHTML);" ><div class="s1"></div></div>
+    <div id="loader2" onclick="viewUp(this.id, this.innerHTML);" ><div class="s2"></div></div>
+    <div id="loader3" onclick="viewUp(this.id, this.innerHTML);" ><div class="s3"><div class="s3-1"></div></div></div>
+    <div id="loader4" onclick="viewUp(this.id, this.innerHTML);" ><div class="s4"><div class="s4-1"></div></div></div>
+    <div id="loader5" onclick="viewUp(this.id, this.innerHTML);" ><div class="s5"><div class="s5-1"></div></div></div>
+    <div id="loader6" onclick="viewUp(this.id, this.innerHTML);" ><div class="s6"></div><p>Please Wait a Moment...</p></div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

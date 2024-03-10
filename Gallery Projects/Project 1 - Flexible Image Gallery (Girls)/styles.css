@@ -1,0 +1,63 @@
+body{
+    margin:auto;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    box-sizing:border-box;
+    width: 90vw;
+    height: 100vh;
+    cursor:url(./pointer.png), auto;
+    background: conic-gradient(from 45deg,whitesmoke,rgb(27, 27, 27));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor:url(./link.png), auto;
+}
+
+.container > .girls{
+    flex:1;
+    width: 10vw;
+    height: 80vh;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+
+.girl-1{background: url(./Images/Girl-1.jpg);}
+.girl-2{background: url(./Images/Girl-2.jpg);}
+.girl-3{background: url(./Images/Girl-3.jpg);}
+.girl-4{background: url(./Images/Girl-4.jpg);}
+.girl-5{background: url(./Images/Girl-5.jpg);}
+.girl-6{background: url(./Images/Girl-6.jpg);}
+.girl-7{background: url(./Images/Girl-7.jpg);}
+.girl-8{background: url(./Images/Girl-8.jpg);}
+.girl-9{background: url(./Images/Girl-9.jpg);}
+.girl-10{background: url(./Images/Girl-10.jpg);}
+.girl-11{background: url(./Images/Girl-11.jpg);}
+
+
+.girls{
+    background-position:center;
+    background-size:1200px;
+    background-repeat:no-repeat;
+}
+
+.girls:nth-child(3), .girls:nth-child(4), .girls:nth-child(10){background-position: center top;}
+
+.girls:hover{
+    flex:80vw;
+}
+
+.girls:active{
+    background-size:contain;
+    backdrop-filter: brightness(50%);
+    background-repeat:no-repeat ;
+    filter: saturate(150%);
+}
