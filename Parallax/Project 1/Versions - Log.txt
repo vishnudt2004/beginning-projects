@@ -1,0 +1,11 @@
+-----Project Parallax-----
+
+Project 1.0 - Parallax
+
+* Scrollsnap Property Used.
+
+-----------------------
+Project 1.1 - Parallax
+
+* Scrollsnap Property is Removed
+* New Scroll Button Added.

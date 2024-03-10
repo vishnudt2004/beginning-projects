@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(219, 219, 219);
+    font-family: Arial, sans-serif;
+    font-weight: 550;
+}
+
+.aside-box{
+    width: 200px ;
+    height: 100vh;
+    background: linear-gradient(174deg, violet, blueviolet);
+    position: absolute;
+    right: 0;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    width: 80vw;
+    height: 80vh;
+    background: linear-gradient(rgba(134, 134, 134, 0.1),rgba(184, 184, 184, 0.342));
+    z-index: 0;
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+    display: none;
+}
+
+.box .box-sign{
+    height: 600px;
+}
+
+.box .box-sign .log-in{
+    transform: translateY(-50%);
+    transition: .7s;
+}
+
+.box > span{
+    position: absolute;
+    right: 0;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(252, 252, 252, 0.247);
+    padding: 0 8px 3px 8px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.box .box-sub{
+    width: 200px;
+    height: 100%;
+    /* background:rgba(184, 184, 184, 0.342); */
+    background: linear-gradient(174deg, violet, blueviolet);
+    backdrop-filter: blur(20px);
+    float: left;
+}
+
+.log-in{
+    width: 80%;
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+form.sign-up{
+    width: 300px;
+    height: 450px;
+    margin-top: 60px;
+}
+
+form.sign-up input{
+    margin: 10px;
+}
+
+input{
+    height: 30px;
+    width: 200px;
+    padding: 5px;
+    margin: 20px;
+    border: 2px solid;
+    border-image: linear-gradient(174deg, violet, blueviolet);
+    border-image-slice: 1;
+    background-color: transparent;
+    transition: .3s;
+    color: blueviolet;
+}
+
+input::placeholder{
+    text-align: center;
+    color: blueviolet;
+    transition: .3s;
+}
+
+button{
+    padding: 10px 30px;
+    background: linear-gradient(198deg, violet, blueviolet);
+    border: 0;
+    margin: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 5px;
+    transition: .3s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+button:focus{
+    border: 0;
+    outline: 0;
+}
+
+button:active{
+    transform: scale(95%);
+}
+
+button::after{
+    content: "";
+    width: 100%;
+    height: 30px;
+    background:whitesmoke;
+    position: absolute;
+    bottom: -100%;
+    right: 100%;
+    transition: .5s;
+    z-index: -1;
+    transform: rotate(45deg);
+}
+
+button:hover::after{
+    right: -100%;
+    bottom: 0;
+}
+
+button:hover{
+    /* color: blueviolet; */
+    box-shadow:0 0 10px 1px rgb(129, 129, 129);
+}
+
+input:hover::placeholder, input:focus::placeholder{
+    transform: translate(5px);
+}
+
+input:focus::placeholder{
+    color: blueviolet;
+}
+
+input:focus{
+    outline: 0;
+    border-image: none;
+    border-image: linear-gradient(174deg, violet, blueviolet);
+    border-image-slice: 1;
+    caret-color: blueviolet;
+    color: blueviolet;
+    background-color: white;
+}
+
+.soc-icons{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 1px;
+}
+
+.soc-icons h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 13px;
+    background: linear-gradient(45deg, violet, blueviolet);
+    border: 3px solid white;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.soc-icons h3::after{
+    content: "";
+    width: 110%;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    top: 90%;
+    right: 100%;
+    transform: rotate(45deg);
+    transition: .4s;
+}
+
+.soc-icons h3:hover:after{
+    right: -100%;
+    top: 0;
+}
+
+.soc-icons h3:hover{
+    box-shadow:0 6px 10px 1px rgb(158, 158, 158);
+}
+
+.soc-icons h3:active{
+    transform: scale(95%);
+}
+
+.soc-icons-2{
+    margin: 0;
+}
+
+.log-in h5{
+    margin-top: 60px;
+    border: 3px solid;
+    border-image: linear-gradient(174deg, violet, blueviolet);
+    border-image-slice: 1;
+    padding: 10px 30px;
+    color: blueviolet;
+}
+
+.log-in h5:last-child{
+    margin: 0;
+}
+
+.log-in a{
+    color: transparent;
+    text-decoration: none;
+    background: linear-gradient(45deg, blueviolet, violet);
+    -webkit-background-clip: text;
+    transition: .4s;
+}
+
+.log-in a:hover{
+    color: white;
+}
+
+nav{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: rgba(134, 134, 134, 0.5);
+    padding: 20px;
+    color: white;
+    letter-spacing: 2px;
+    z-index: 10;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline;
+    padding: 20px;
+    margin: 10px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+nav ul a{
+    color: unset;
+    text-decoration: none;
+}
+
+nav ul li:hover{
+    background-color: white;
+    color: blueviolet;
+}
