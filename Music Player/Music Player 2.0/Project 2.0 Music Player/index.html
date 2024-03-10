@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section id="head-container">
+      <audio id="main-audio"></audio>
+      <div id="containers-parent">
+        <div id="container-1">
+          <div id="playlist-container">
+            <h5 id="pl-heading">PLAYLIST</h5>
+            <ol id="playlist">
+              <li>
+                <audio
+                  class="s-audio"
+                  src="./music/Bad style-Time Back.mp3"
+                ></audio>
+                <p class="s-name"></p>
+              </li>
+              <li>
+                <audio class="s-audio" src="./music/Gta.mp3"></audio>
+                <p class="s-name"></p>
+              </li>
+              <li>
+                <audio
+                  class="s-audio"
+                  src="./music/Hymn For The Weekend(Instrumental) Coldplay.mp3"
+                ></audio>
+                <p class="s-name"></p>
+              </li>
+              <li>
+                <audio class="s-audio" src="./music/Instrumental.mp3"></audio>
+                <p class="s-name"></p>
+              </li>
+              <li>
+                <audio class="s-audio" src="./music/Piano.mp3"></audio>
+                <p class="s-name"></p>
+              </li>
+            </ol>
+          </div>
+          <img
+            class=".button"
+            id="pl-btn"
+            src="./image&icos/play1.png"
+            alt=""
+          />
+          <span id="pl-btn-title">PLAYLIST</span>
+        </div>
+        <!-- ------------------------------------------------------------------------------------------------------------------------- -->
+        <div id="container-2">
+          <img id="music-img" src="./image&icos/music.png" alt="" />
+          <div id="controls-parent">
+            <p id="current-song-name">- Music -</p>
+            <div class="controls-div" id="song-p-d-container">
+              <progress
+                id="song-progress"
+                min="0"
+                max="100"
+                value="0"
+              ></progress>
+              <p id="song-duration">00:00</p>
+            </div>
+            <div class="controls-div" id="btn-container">
+              <img
+                class="button"
+                id="pre-btn"
+                src="./image&icos/back.png"
+                alt=""
+              />
+              <img
+                class="button"
+                id="play-btn"
+                src="./image&icos/play1.png"
+                alt=""
+              />
+              <img
+                class="button"
+                id="nxt-btn"
+                src="./image&icos/next.png"
+                alt=""
+              />
+              <img
+                class="button"
+                id="mute-btn"
+                src="./image&icos/knob.png"
+                alt=""
+              />
+              <progress
+                id="volume-progress"
+                min="0"
+                max="100"
+                value="100"
+              ></progress>
+            </div>
+          </div>
+        </div>
+        <!-- ------------------------------------------------------------------------------------------------------------------------- -->
+        <div id="container-3">
+          <span id="settings-btn-title">SETTINGS</span>
+          <img
+            class="button"
+            id="settings-btn"
+            src="./image&icos/settings.png"
+            alt=""
+          />
+          <div id="settings-container">
+            <h5 id="settings-heading">SETTINGS</h5>
+
+            <div id="theme">
+              <h4>Themes</h4>
+              <ul id="theme-container">
+                <li><div class="theme theme-1"></div></li>
+                <li><div class="theme theme-2"></div></li>
+                <li><div class="theme theme-3"></div></li>
+                <li><div class="theme theme-4"></div></li>
+                <li>
+                  <div class="theme-5">
+                    <span>CUSTOM</span>
+                    <input type="color" name="" id="custom-color" />
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div id="check">
+              <h4>Controls Settings</h4>
+              <ul id="settings-check">
+                <li>
+                  <label for="check-1">
+                    Improve the Controls Visibility:
+                    <input type="checkbox" name="" id="check-1" />
+                  </label>
+                </li>
+                <li>
+                  <label for="check-2">
+                    Improve the Playlist & Settings Visibility:
+                    <input type="checkbox" name="" id="check-2" />
+                  </label>
+                </li>
+                <li>
+                  <label for="check-3">
+                    Hide the Volume Bar & Mute Button:
+                    <input type="checkbox" name="" id="check-3" />
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------------------------------------------------------------------------------------------------------- -->
+    <script src="./index.js"></script>
+  </body>
+</html>

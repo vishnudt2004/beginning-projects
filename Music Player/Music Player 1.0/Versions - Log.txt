@@ -1,0 +1,11 @@
+-----Project Music Player-----
+
+Project 1.0 - Music Player
+
+* Music Player
+
+-----------------------
+Project 1.1 - Music Player
+
+* UI is Changed For Both Pages - List and Player - Background Color and Border Radius of Objects
+* Audio Files are Changed.

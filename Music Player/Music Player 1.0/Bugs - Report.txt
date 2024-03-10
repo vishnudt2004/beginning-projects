@@ -1,0 +1,7 @@
+-----Project Music Player-----
+
+There are bugs noted un this Music Player pages (Aug 18, 2023):
+
+Once the Audio is start to play, then click any key on keyborad ("Esc","ArrowRight",etc..) to working well.
+
+After the come back to homepage, still for keyboard is listen for clicks ("Esc","ArrowRight",etc..) and there are errors appeared in browser console.
