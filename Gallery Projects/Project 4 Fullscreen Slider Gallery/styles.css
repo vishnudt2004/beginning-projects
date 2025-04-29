@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#container-main{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.493);
+    overflow: hidden;
+}
+
+.tabs input[type="radio"]{
+    visibility: hidden;
+    display: none;
+}
+
+.labels{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    z-index: 100;
+    position: absolute;
+    bottom: 100px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.labels label{
+    width:30px;
+    height: 30px;
+    background: black;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 50px;
+}
+
+.tabs input:nth-child(1):checked ~ .labels label:nth-child(1),
+.tabs input:nth-child(2):checked ~ .labels label:nth-child(2),
+.tabs input:nth-child(3):checked ~ .labels label:nth-child(3){
+    opacity: 1;
+    width: 50px;
+}
+
+.tabs input:nth-child(1):checked ~ .content{
+    left: 0;
+}
+
+.tabs input:nth-child(2):checked ~ .content{
+    left: -100vw;
+}
+
+.tabs input:nth-child(3):checked ~ .content{
+    left: -200vw;
+}
+
+.content{
+    width: 300vw;
+    display: flex;
+    position: relative;
+    transition: 0.5s;
+}
+
+.content .box{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .box:nth-child(1){background:linear-gradient(seagreen,limegreen,lime);}
+.content .box:nth-child(2){background:linear-gradient(skyblue,deepskyblue,blue) ;}
+.content .box:nth-child(3){background:linear-gradient(crimson,tomato,red) ;}
+
+.content .box img{
+    width: auto;
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.493);
+    padding: 10px;
+    object-fit: cover;
+}
