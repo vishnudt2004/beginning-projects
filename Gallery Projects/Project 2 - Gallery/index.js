@@ -65,7 +65,7 @@ function previousImage(){
             closeUp();
         }
 
-        if(e.key == "F" || " "){
+        if(e.key == ("F" || " ")){
             fullScreenUp();
         }
 
