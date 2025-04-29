@@ -16,10 +16,10 @@ You can check out some of the projects here:
 
 ## 🖼️ Gallery Projects
 
-- [Flexible Image Gallery (Girls)](https://vishnudt2004.github.io/beginning-projects/Gallery%20Projects/Project%201%20-%20Flexible%20Image%20Gallery%20(Girls)/)
 - [Simple Gallery](https://vishnudt2004.github.io/beginning-projects/Gallery%20Projects/Project%202%20-%20Gallery/)
 - [Grid Gallery](https://vishnudt2004.github.io/beginning-projects/Gallery%20Projects/Project%203%20-%20Grid%20Gallery/)
 - [Fullscreen Slider Gallery](https://vishnudt2004.github.io/beginning-projects/Gallery%20Projects/Project%204%20Fullscreen%20Slider%20Gallery/)
+- [Flexible Image Gallery](https://vishnudt2004.github.io/beginning-projects/Gallery%20Projects/Project%201%20-%20Flexible%20Image%20Gallery%20(Girls)/)
 
 ## 🎨 Gradient Generators
 
@@ -48,7 +48,7 @@ You can check out some of the projects here:
 
 - [Parallax 1.0](https://vishnudt2004.github.io/beginning-projects/Parallax/Project%201/Project%201.0%20-%20Parallax/)
 - [Parallax 1.1](https://vishnudt2004.github.io/beginning-projects/Parallax/Project%201/Project%201.1%20-%20Parallax/)
-- [App Brewery Parallax](https://vishnudt2004.github.io/beginning-projects/Parallax/[App%20Brewery]%20Project%20-%20CSS%20My%20Site/)
+- [Personal site - Parallax (App Brewery)](https://vishnudt2004.github.io/beginning-projects/Parallax/[App%20Brewery]%20Project%20-%20CSS%20My%20Site/)
 
 ## 🥁 Drum Kits
 
@@ -62,6 +62,6 @@ You can check out some of the projects here:
 
 ## 🏫 Multi-Page Site
 
-- [College Site (Bootstrap)](https://vishnudt2004.github.io/beginning-projects/Multiple%20Pages%20Websites/Project%20GASCKPM%20(Bootstrap)/Project%20%201.3%20-%20GASCKPM/index.html)
+- [College Site (Bootstrap)](https://vishnudt2004.github.io/beginning-projects/Multiple%20Pages%20Websites/Project%20GASCKPM%20(Bootstrap)/Project%20%201.3%20-%20GASCKPM/home-page.html)
 
 ---
