@@ -26,11 +26,15 @@ You can check out some of the projects here:
 - [Five Gradient Colors at a Time](https://vishnudt2004.github.io/beginning-projects/Gradient%20Colors%20Generators/Project%2001%20-%20Five%20Gradient%20Color%20Generator%20at%20a%20Time/)
 - [Multiple Linear Gradient Generator](https://vishnudt2004.github.io/beginning-projects/Gradient%20Colors%20Generators/Project%2002%20-%20Multiple%20Linear%20Gradient%20Generator/)
 
-## 🔘 Buttons & Animations
+## 🔘 Tiny Utils & Elements
 
 - [Button Hover Effects](https://vishnudt2004.github.io/beginning-projects/Button%20Hover%20Effects/html.html)
-- [Sky Tour - Creative Page](https://vishnudt2004.github.io/beginning-projects/Animating%20&%20Creative%20Pages/Sky%20Tour/)
 - [Loader Animation](https://vishnudt2004.github.io/beginning-projects/Loader%20Animation/)
+
+## 🎇 Creative & Animations
+
+- [Sky Tour - Creative Page](https://vishnudt2004.github.io/beginning-projects/Animating%20&%20Creative%20Pages/Sky%20Tour/)
+- [Mobile phone](https://vishnudt2004.github.io/beginning-projects/Animating%20&%20Creative%20Pages/Mobile%20Phone%20Project/)
 
 ## 🎵 Music Players
 
